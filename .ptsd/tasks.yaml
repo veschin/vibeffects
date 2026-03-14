@@ -1,81 +1,81 @@
 tasks:
-  # === USER tasks (требуют участия пользователя) ===
+  # === USER tasks (require user involvement) ===
   - id: T-1
     feature: scenario-workflow
-    title: "Подобрать мемы и ассеты для ClojureScript видео"
+    title: "Pick memes and assets for ClojureScript video"
     priority: B
     status: TODO
     checklist:
-      - "AI сгенерирует scenario.json с assetRequests"
-      - "Пользователь подбирает мемы по контексту"
-      - "Положить ассеты в projects/cljs/assets/"
+      - "AI will generate scenario.json with assetRequests"
+      - "User picks memes by context"
+      - "Place assets in projects/cljs/assets/"
 
   - id: T-2
     feature: scenario-workflow
-    title: "Записать демо-видео для склейки с основным"
+    title: "Record demo video to splice with the main one"
     priority: C
     status: TODO
     checklist:
-      - "Записать скринкаст ClojureScript (REPL, код)"
-      - "Положить mp4 в projects/cljs/assets/demo.mp4"
-      - "Добавить external-video паттерн в spec.json"
+      - "Record ClojureScript screencast (REPL, code)"
+      - "Place mp4 in projects/cljs/assets/demo.mp4"
+      - "Add external-video pattern to spec.json"
 
   - id: T-3
     feature: engine-core
-    title: "Проверить legacy референс — полезные идеи для движка"
+    title: "Review legacy reference — useful ideas for the engine"
     priority: B
     status: TODO
     checklist:
-      - "Emotion-driven анимации из youtube_v4"
-      - "Music mood system из youtube_v4"
-      - "Forced alignment для субтитров"
-      - "Обсудить что из этого нужно"
+      - "Emotion-driven animations from youtube_v4"
+      - "Music mood system from youtube_v4"
+      - "Forced alignment for subtitles"
+      - "Discuss what is needed from this"
 
   # === TEST tasks ===
   - id: T-4
     feature: engine-core
-    title: "Написать Zod-схемы валидации (src/engine/schema.ts)"
+    title: "Write Zod validation schemas (src/engine/schema.ts)"
     priority: A
     status: TODO
     checklist:
-      - "VideoSpecSchema с version: 2"
-      - "SceneSpecSchema с refine endSec > startSec"
-      - "ElementSchema discriminated union 14 типов"
+      - "VideoSpecSchema with version: 2"
+      - "SceneSpecSchema with refine endSec > startSec"
+      - "ElementSchema discriminated union of 14 types"
       - "CommentaryEntrySchema max 140 chars"
       - "SubtitleConfigSchema"
       - "PatternInstanceSchema"
-      - "validateSpec() для дупликатов element ID"
+      - "validateSpec() for duplicate element IDs"
 
   - id: T-5
     feature: engine-core
-    title: "Написать тесты для engine-core"
+    title: "Write tests for engine-core"
     priority: A
     status: TODO
     checklist:
-      - "src/engine/__tests__/types.test.ts — валидация спека, сцен, элементов"
-      - "src/engine/__tests__/palette.test.ts — 6 пресетов, все поля"
+      - "src/engine/__tests__/types.test.ts — spec, scene, element validation"
+      - "src/engine/__tests__/palette.test.ts — 6 presets, all fields"
       - "src/engine/__tests__/timing.test.ts — getTotalDurationFrames, isElementVisible"
-      - "ptsd test map для каждого файла"
+      - "ptsd test map for each file"
 
   - id: T-6
     feature: pattern-library
-    title: "Написать тесты для pattern-library"
+    title: "Write tests for pattern-library"
     priority: A
     status: TODO
     checklist:
       - "src/patterns/__tests__/registry.test.ts"
-      - "Реестр содержит 22 паттерна"
+      - "Registry contains 22 patterns"
       - "resolveContent happy/error/unknown"
-      - "Zod валидация params каждого паттерна"
+      - "Zod validation of params for each pattern"
 
   - id: T-7
     feature: subtitles
-    title: "Написать тесты для subtitles и ai-commentary"
+    title: "Write tests for subtitles and ai-commentary"
     priority: B
     status: TODO
     checklist:
-      - "Группировка слов по proximity 200ms"
-      - "Max 2 строки"
+      - "Word grouping by proximity 200ms"
+      - "Max 2 lines"
       - "Disabled via false"
       - "Commentary overlap resolution"
       - "Max 140 chars enforcement"
@@ -83,17 +83,17 @@ tasks:
   # === IMPL: Engine core ===
   - id: T-8
     feature: engine-core
-    title: "Скопировать palette.ts из legacy"
+    title: "Copy palette.ts from legacy"
     priority: A
     status: TODO
     checklist:
-      - "Скопировать 6 пресетов из legacy/src/engine/palette.ts"
-      - "Адаптировать экспорты под новый Palette тип"
-      - "PRESETS record с именами пресетов"
+      - "Copy 6 presets from legacy/src/engine/palette.ts"
+      - "Adapt exports to new Palette type"
+      - "PRESETS record with preset names"
 
   - id: T-9
     feature: engine-core
-    title: "Портировать animations.ts из legacy"
+    title: "Port animations.ts from legacy"
     priority: A
     status: TODO
     checklist:
@@ -105,155 +105,155 @@ tasks:
 
   - id: T-10
     feature: engine-core
-    title: "Портировать parseOrgMarkup из legacy"
+    title: "Port parseOrgMarkup from legacy"
     priority: B
     status: TODO
     checklist:
-      - "Скопировать legacy/src/lib/parseOrgMarkup.tsx"
+      - "Copy legacy/src/lib/parseOrgMarkup.tsx"
       - "*bold*, ~code~, /italic/, _underline_"
-      - "Spring-анимации для каждого типа"
+      - "Spring animations for each type"
 
   - id: T-11
     feature: engine-core
-    title: "Портировать font-loader и fonts из legacy"
+    title: "Port font-loader and fonts from legacy"
     priority: B
     status: TODO
     checklist:
-      - "font-loader.ts — реестр Google Fonts"
-      - "fonts.ts — buildTypeScale(), 12 типографских стилей"
+      - "font-loader.ts — Google Fonts registry"
+      - "fonts.ts — buildTypeScale(), 12 typographic styles"
       - "Subset cyrillic + latin"
 
   - id: T-12
     feature: engine-core
-    title: "Создать design-constants.ts"
+    title: "Create design-constants.ts"
     priority: A
     status: TODO
     checklist:
-      - "Все пиксельные размеры в одном файле"
+      - "All pixel sizes in one file"
       - "scenePadding, elementGap, headingHeight"
       - "focusRatios (78% x 72%)"
       - "subtitleFontSize, commentaryPosition"
 
   - id: T-13
     feature: engine-core
-    title: "Создать timing.ts — audio-driven тайминг"
+    title: "Create timing.ts — audio-driven timing"
     priority: A
     status: TODO
     checklist:
-      - "getTotalDurationFrames — из scene.endSec"
+      - "getTotalDurationFrames — from scene.endSec"
       - "getSceneDurationFrames"
       - "isElementVisible — enterSec/exitSec window"
-      - "Пустые scenes → 1 фрейм"
+      - "Empty scenes → 1 frame"
 
   - id: T-14
     feature: engine-core
-    title: "Создать ThemeContext и resolve"
+    title: "Create ThemeContext and resolve"
     priority: A
     status: TODO
     checklist:
       - "src/engine/context.ts — React Context"
       - "usePalette(), useThemeFonts(), useTypeScale()"
-      - "src/engine/theme-resolve.ts — мерж preset + overrides"
+      - "src/engine/theme-resolve.ts — merge preset + overrides"
 
   - id: T-15
     feature: engine-core
-    title: "Создать layout engine (stageLayout)"
+    title: "Create layout engine (stageLayout)"
     priority: A
     status: TODO
     checklist:
       - "calculateElementStates(frame, fps, elements, viewport)"
-      - "Фазы: hidden, focus (78%x72%), refocus, grid"
-      - "Spring interpolation при переходах"
-      - "Content-aware весы для grid"
+      - "Phases: hidden, focus (78%x72%), refocus, grid"
+      - "Spring interpolation during transitions"
+      - "Content-aware weights for grid"
 
   # === IMPL: Patterns ===
   - id: T-16
     feature: pattern-library
-    title: "Создать pattern registry и resolveContent"
+    title: "Create pattern registry and resolveContent"
     priority: A
     status: TODO
     checklist:
       - "src/engine/resolve.ts — resolveContent()"
-      - "PATTERN_REGISTRY из src/patterns/index.ts"
-      - "definePattern() фабрика"
-      - "Ошибка unknown pattern для неизвестных ID"
+      - "PATTERN_REGISTRY from src/patterns/index.ts"
+      - "definePattern() factory"
+      - "Error for unknown pattern IDs"
 
   - id: T-17
     feature: pattern-library
-    title: "Реализовать первые 5 паттернов"
+    title: "Implement first 5 patterns"
     priority: A
     status: TODO
     checklist:
-      - "title-card — heading + text с задержкой"
-      - "key-point — крупный текст по центру"
+      - "title-card — heading + text with delay"
+      - "key-point — large centered text"
       - "bullet-reveal — sequential list reveal"
       - "code-walkthrough — Prism + line-by-line"
-      - "comparison — два столбца"
+      - "comparison — two columns"
 
   - id: T-18
     feature: pattern-library
-    title: "Реализовать graph-паттерны"
+    title: "Implement graph patterns"
     priority: B
     status: TODO
     checklist:
       - "architecture-diagram — ELK.js, group-by-group reveal"
       - "process-flow — horizontal/vertical steps"
-      - "concept-map — radial layout от центра"
-      - "Портировать useElkLayout из legacy"
+      - "concept-map — radial layout from center"
+      - "Port useElkLayout from legacy"
 
   - id: T-19
     feature: pattern-library
-    title: "Реализовать data-паттерны"
+    title: "Implement data patterns"
     priority: B
     status: TODO
     checklist:
-      - "data-table — headers + rows с highlight"
-      - "timeline — хронологические события"
-      - "metric-dashboard — counter-элементы"
-      - "bar-chart — столбчатая диаграмма"
-      - "pie-chart — круговая с rotation"
+      - "data-table — headers + rows with highlight"
+      - "timeline — chronological events"
+      - "metric-dashboard — counter elements"
+      - "bar-chart — bar diagram"
+      - "pie-chart — circular with rotation"
       - "line-chart — animated draw left-to-right"
-      - "stat-card — крупная цифра + дельта"
+      - "stat-card — large number + delta"
 
   - id: T-20
     feature: pattern-library
-    title: "Реализовать web-scroll паттерн"
+    title: "Implement web-scroll pattern"
     priority: B
     status: TODO
     checklist:
       - "Puppeteer fullPage screenshot"
       - "Browser chrome frame (traffic lights, URL)"
-      - "Animated translateY scroll с easing"
-      - "Портировать capture-web.mjs"
-      - "Hash URL → filename синхронизация"
+      - "Animated translateY scroll with easing"
+      - "Port capture-web.mjs"
+      - "Hash URL → filename synchronization"
 
   - id: T-21
     feature: pattern-library
-    title: "Реализовать external-video паттерн"
+    title: "Implement external-video pattern"
     priority: B
     status: TODO
     checklist:
       - "Remotion <OffthreadVideo>"
-      - "trim {from, to} в секундах"
+      - "trim {from, to} in seconds"
       - "Optional caption"
 
   - id: T-22
     feature: pattern-library
-    title: "Реализовать remaining паттерны"
+    title: "Implement remaining patterns"
     priority: C
     status: TODO
     checklist:
-      - "quote-card — цитата с автором"
+      - "quote-card — quote with author"
       - "split-media — image + text"
-      - "stack-diagram — слои снизу вверх"
-      - "before-after — два столбца с задержкой"
+      - "stack-diagram — layers bottom to top"
+      - "before-after — two columns with delay"
       - "callout — warning/tip/note/important"
-      - "term-definition — термин + определение + пример"
+      - "term-definition — term + definition + example"
 
   # === IMPL: Elements & Components ===
   - id: T-23
     feature: engine-core
-    title: "Реализовать 14 element-компонентов"
+    title: "Implement 14 element components"
     priority: A
     status: TODO
     checklist:
@@ -270,93 +270,93 @@ tasks:
 
   - id: T-24
     feature: engine-core
-    title: "Реализовать SceneRenderer"
+    title: "Implement SceneRenderer"
     priority: A
     status: TODO
     checklist:
-      - "Резолв паттернов → элементы"
-      - "Layout engine → позиции"
-      - "ElementRenderer для каждого элемента"
+      - "Resolve patterns → elements"
+      - "Layout engine → positions"
+      - "ElementRenderer for each element"
       - "Background (Deco3D / gradient)"
       - "Watermark"
 
   - id: T-25
     feature: subtitles
-    title: "Реализовать SubtitleOverlay"
+    title: "Implement SubtitleOverlay"
     priority: A
     status: TODO
     checklist:
-      - "Word-level sync из transcription.json"
-      - "Группировка по proximity 200ms"
-      - "Max 2 строки"
+      - "Word-level sync from transcription.json"
+      - "Grouping by proximity 200ms"
+      - "Max 2 lines"
       - "Pill style, configurable fontSize/position"
       - "Disabled via spec.subtitles: false"
 
   - id: T-26
     feature: ai-commentary
-    title: "Реализовать CommentaryOverlay"
+    title: "Implement CommentaryOverlay"
     priority: A
     status: TODO
     checklist:
-      - "Spring slide-in сверху, fade-out"
-      - "Три типа: correction (красный), note (синий), joke (жёлтый)"
+      - "Spring slide-in from top, fade-out"
+      - "Three types: correction (red), note (blue), joke (yellow)"
       - "Overlap resolution"
       - "Max 140 chars"
 
   - id: T-27
     feature: engine-core
-    title: "Собрать Composition.tsx — полный оркестратор"
+    title: "Assemble Composition.tsx — full orchestrator"
     priority: A
     status: TODO
     checklist:
       - "ThemeContext.Provider"
-      - "<Audio> из spec.audio"
-      - "TransitionSeries сцен"
+      - "<Audio> from spec.audio"
+      - "TransitionSeries of scenes"
       - "SubtitleOverlay + CommentaryOverlay"
-      - "Root.tsx с calculateMetadata"
-      - "loadSpec с delayRender"
+      - "Root.tsx with calculateMetadata"
+      - "loadSpec with delayRender"
 
   - id: T-28
     feature: engine-core
-    title: "Портировать Deco3D фон из legacy"
+    title: "Port Deco3D background from legacy"
     priority: C
     status: TODO
     checklist:
-      - "12 случайных фигур в 3 слоях"
-      - "Float-анимация sin/cos"
+      - "12 random shapes in 3 layers"
+      - "Float animation sin/cos"
       - "Rotation + breathing scale"
       - "Layer-specific blur"
 
   # === IMPL: Scripts ===
   - id: T-29
     feature: transcription-pipeline
-    title: "Создать scripts/transcribe.ts"
+    title: "Create scripts/transcribe.ts"
     priority: A
     status: TODO
     checklist:
-      - "Адаптировать из youtube_v4"
-      - "Medium model (русский)"
+      - "Adapt from youtube_v4"
+      - "Medium model (Russian)"
       - "Word-level timestamps"
       - "Sub-word merging, punctuation removal"
       - "Output → projects/<PROJECT>/transcription.json"
 
   - id: T-30
     feature: scenario-workflow
-    title: "Создать scripts/validate-spec.ts"
+    title: "Create scripts/validate-spec.ts"
     priority: B
     status: TODO
     checklist:
-      - "Читает spec.json из проекта"
-      - "Zod-валидация всех схем"
-      - "Проверка params паттернов"
-      - "Вывод valid или список ошибок"
+      - "Reads spec.json from project"
+      - "Zod validation of all schemas"
+      - "Pattern params validation"
+      - "Output valid or list of errors"
 
   - id: T-31
     feature: customization
-    title: "Создать scripts/init-project.ts"
+    title: "Create scripts/init-project.ts"
     priority: B
     status: TODO
     checklist:
       - "Scaffold: audio/, assets/, custom/{patterns/, components/, theme.json}, out/"
-      - "Валидация имени [a-z0-9-_]"
-      - "Ошибка если проект существует"
+      - "Name validation [a-z0-9-_]"
+      - "Error if project already exists"
