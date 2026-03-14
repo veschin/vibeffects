@@ -15,6 +15,8 @@ features:
       seed:
         score: 8
         at: "2026-03-14T15:10:13.313096141+03:00"
+    tests:
+      - .ptsd/bdd/ai-commentary.feature::src/engine/__tests__/commentary.test.ts
   customization:
     stage: bdd
     hashes:
@@ -47,6 +49,11 @@ features:
       seed:
         score: 8
         at: "2026-03-14T15:10:13.308988662+03:00"
+    tests:
+      - .ptsd/bdd/engine-core.feature::src/engine/__tests__/schema.test.ts
+      - .ptsd/bdd/engine-core.feature::src/engine/__tests__/palette.test.ts
+      - .ptsd/bdd/engine-core.feature::src/engine/__tests__/timing.test.ts
+      - .ptsd/bdd/engine-core.feature::src/engine/__tests__/design-constants.test.ts
   pattern-library:
     stage: bdd
     hashes:
@@ -95,6 +102,8 @@ features:
       seed:
         score: 8
         at: "2026-03-14T15:10:13.312316918+03:00"
+    tests:
+      - .ptsd/bdd/subtitles.feature::src/engine/__tests__/subtitles.test.ts
   transcription-pipeline:
     stage: bdd
     hashes:

@@ -1,362 +1,156 @@
 tasks:
-  # === USER tasks (require user involvement) ===
   - id: T-1
     feature: scenario-workflow
-    title: "Pick memes and assets for ClojureScript video"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Pick memes and assets for ClojureScript video\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "AI will generate scenario.json with assetRequests"
-      - "User picks memes by context"
-      - "Place assets in projects/cljs/assets/"
-
+    priority: B
   - id: T-2
     feature: scenario-workflow
-    title: "Record demo video to splice with the main one"
-    priority: C
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Record demo video to splice with the main one\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Record ClojureScript screencast (REPL, code)"
-      - "Place mp4 in projects/cljs/assets/demo.mp4"
-      - "Add external-video pattern to spec.json"
-
+    priority: C
   - id: T-3
     feature: engine-core
-    title: "Review legacy reference — useful ideas for the engine"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Review legacy reference — useful ideas for the engine\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Emotion-driven animations from youtube_v4"
-      - "Music mood system from youtube_v4"
-      - "Forced alignment for subtitles"
-      - "Discuss what is needed from this"
-
-  # === TEST tasks ===
+    priority: B
   - id: T-4
     feature: engine-core
-    title: "Write Zod validation schemas (src/engine/schema.ts)"
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Write Zod validation schemas (src/engine/schema.ts)\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
+    status: DONE
     priority: A
-    status: TODO
-    checklist:
-      - "VideoSpecSchema with version: 2"
-      - "SceneSpecSchema with refine endSec > startSec"
-      - "ElementSchema discriminated union of 14 types"
-      - "CommentaryEntrySchema max 140 chars"
-      - "SubtitleConfigSchema"
-      - "PatternInstanceSchema"
-      - "validateSpec() for duplicate element IDs"
-
   - id: T-5
     feature: engine-core
-    title: "Write tests for engine-core"
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Write tests for engine-core\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
+    status: DONE
     priority: A
-    status: TODO
-    checklist:
-      - "src/engine/__tests__/types.test.ts — spec, scene, element validation"
-      - "src/engine/__tests__/palette.test.ts — 6 presets, all fields"
-      - "src/engine/__tests__/timing.test.ts — getTotalDurationFrames, isElementVisible"
-      - "ptsd test map for each file"
-
   - id: T-6
     feature: pattern-library
-    title: "Write tests for pattern-library"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Write tests for pattern-library\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "src/patterns/__tests__/registry.test.ts"
-      - "Registry contains 22 patterns"
-      - "resolveContent happy/error/unknown"
-      - "Zod validation of params for each pattern"
-
+    priority: A
   - id: T-7
     feature: subtitles
-    title: "Write tests for subtitles and ai-commentary"
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Write tests for subtitles and ai-commentary\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
+    status: DONE
     priority: B
-    status: TODO
-    checklist:
-      - "Word grouping by proximity 200ms"
-      - "Max 2 lines"
-      - "Disabled via false"
-      - "Commentary overlap resolution"
-      - "Max 140 chars enforcement"
-
-  # === IMPL: Engine core ===
   - id: T-8
     feature: engine-core
-    title: "Copy palette.ts from legacy"
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Copy palette.ts from legacy\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
+    status: DONE
     priority: A
-    status: TODO
-    checklist:
-      - "Copy 6 presets from legacy/src/engine/palette.ts"
-      - "Adapt exports to new Palette type"
-      - "PRESETS record with preset names"
-
   - id: T-9
     feature: engine-core
-    title: "Port animations.ts from legacy"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Port animations.ts from legacy\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "useSlideAnimation — spring entrance + fade exit"
-      - "useBlockEntrance — directional slide-in"
-      - "useFloat3dEntrance — 3D perspective"
-      - "useBreathingGlow — sin-wave opacity pulse"
-      - "SPRING_SMOOTH config"
-
+    priority: A
   - id: T-10
     feature: engine-core
-    title: "Port parseOrgMarkup from legacy"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Port parseOrgMarkup from legacy\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Copy legacy/src/lib/parseOrgMarkup.tsx"
-      - "*bold*, ~code~, /italic/, _underline_"
-      - "Spring animations for each type"
-
+    priority: B
   - id: T-11
     feature: engine-core
-    title: "Port font-loader and fonts from legacy"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Port font-loader and fonts from legacy\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "font-loader.ts — Google Fonts registry"
-      - "fonts.ts — buildTypeScale(), 12 typographic styles"
-      - "Subset cyrillic + latin"
-
+    priority: B
   - id: T-12
     feature: engine-core
-    title: "Create design-constants.ts"
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create design-constants.ts\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
+    status: DONE
     priority: A
-    status: TODO
-    checklist:
-      - "All pixel sizes in one file"
-      - "scenePadding, elementGap, headingHeight"
-      - "focusRatios (78% x 72%)"
-      - "subtitleFontSize, commentaryPosition"
-
   - id: T-13
     feature: engine-core
-    title: "Create timing.ts — audio-driven timing"
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create timing.ts — audio-driven timing\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
+    status: DONE
     priority: A
-    status: TODO
-    checklist:
-      - "getTotalDurationFrames — from scene.endSec"
-      - "getSceneDurationFrames"
-      - "isElementVisible — enterSec/exitSec window"
-      - "Empty scenes → 1 frame"
-
   - id: T-14
     feature: engine-core
-    title: "Create ThemeContext and resolve"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create ThemeContext and resolve\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "src/engine/context.ts — React Context"
-      - "usePalette(), useThemeFonts(), useTypeScale()"
-      - "src/engine/theme-resolve.ts — merge preset + overrides"
-
+    priority: A
   - id: T-15
     feature: engine-core
-    title: "Create layout engine (stageLayout)"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create layout engine (stageLayout)\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "calculateElementStates(frame, fps, elements, viewport)"
-      - "Phases: hidden, focus (78%x72%), refocus, grid"
-      - "Spring interpolation during transitions"
-      - "Content-aware weights for grid"
-
-  # === IMPL: Patterns ===
+    priority: A
   - id: T-16
     feature: pattern-library
-    title: "Create pattern registry and resolveContent"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create pattern registry and resolveContent\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "src/engine/resolve.ts — resolveContent()"
-      - "PATTERN_REGISTRY from src/patterns/index.ts"
-      - "definePattern() factory"
-      - "Error for unknown pattern IDs"
-
+    priority: A
   - id: T-17
     feature: pattern-library
-    title: "Implement first 5 patterns"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement first 5 patterns\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "title-card — heading + text with delay"
-      - "key-point — large centered text"
-      - "bullet-reveal — sequential list reveal"
-      - "code-walkthrough — Prism + line-by-line"
-      - "comparison — two columns"
-
+    priority: A
   - id: T-18
     feature: pattern-library
-    title: "Implement graph patterns"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement graph patterns\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "architecture-diagram — ELK.js, group-by-group reveal"
-      - "process-flow — horizontal/vertical steps"
-      - "concept-map — radial layout from center"
-      - "Port useElkLayout from legacy"
-
+    priority: B
   - id: T-19
     feature: pattern-library
-    title: "Implement data patterns"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement data patterns\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "data-table — headers + rows with highlight"
-      - "timeline — chronological events"
-      - "metric-dashboard — counter elements"
-      - "bar-chart — bar diagram"
-      - "pie-chart — circular with rotation"
-      - "line-chart — animated draw left-to-right"
-      - "stat-card — large number + delta"
-
+    priority: B
   - id: T-20
     feature: pattern-library
-    title: "Implement web-scroll pattern"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement web-scroll pattern\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Puppeteer fullPage screenshot"
-      - "Browser chrome frame (traffic lights, URL)"
-      - "Animated translateY scroll with easing"
-      - "Port capture-web.mjs"
-      - "Hash URL → filename synchronization"
-
+    priority: B
   - id: T-21
     feature: pattern-library
-    title: "Implement external-video pattern"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement external-video pattern\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Remotion <OffthreadVideo>"
-      - "trim {from, to} in seconds"
-      - "Optional caption"
-
+    priority: B
   - id: T-22
     feature: pattern-library
-    title: "Implement remaining patterns"
-    priority: C
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement remaining patterns\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "quote-card — quote with author"
-      - "split-media — image + text"
-      - "stack-diagram — layers bottom to top"
-      - "before-after — two columns with delay"
-      - "callout — warning/tip/note/important"
-      - "term-definition — term + definition + example"
-
-  # === IMPL: Elements & Components ===
+    priority: C
   - id: T-23
     feature: engine-core
-    title: "Implement 14 element components"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement 14 element components\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "TextElement, HeadingElement"
-      - "CodeElement (Prism syntax highlighting)"
-      - "ImageElement"
-      - "BulletListElement, TableElement"
-      - "GraphElement (SVG + ELK)"
-      - "ChartElement (bar/pie/line)"
-      - "IconElement, DividerElement, BadgeElement"
-      - "ProgressElement, CounterElement (animated)"
-      - "CalloutElement"
-      - "ElementRenderer dispatch"
-
+    priority: A
   - id: T-24
     feature: engine-core
-    title: "Implement SceneRenderer"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement SceneRenderer\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Resolve patterns → elements"
-      - "Layout engine → positions"
-      - "ElementRenderer for each element"
-      - "Background (Deco3D / gradient)"
-      - "Watermark"
-
+    priority: A
   - id: T-25
     feature: subtitles
-    title: "Implement SubtitleOverlay"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement SubtitleOverlay\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Word-level sync from transcription.json"
-      - "Grouping by proximity 200ms"
-      - "Max 2 lines"
-      - "Pill style, configurable fontSize/position"
-      - "Disabled via spec.subtitles: false"
-
+    priority: A
   - id: T-26
     feature: ai-commentary
-    title: "Implement CommentaryOverlay"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Implement CommentaryOverlay\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Spring slide-in from top, fade-out"
-      - "Three types: correction (red), note (blue), joke (yellow)"
-      - "Overlap resolution"
-      - "Max 140 chars"
-
+    priority: A
   - id: T-27
     feature: engine-core
-    title: "Assemble Composition.tsx — full orchestrator"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Assemble Composition.tsx — full orchestrator\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "ThemeContext.Provider"
-      - "<Audio> from spec.audio"
-      - "TransitionSeries of scenes"
-      - "SubtitleOverlay + CommentaryOverlay"
-      - "Root.tsx with calculateMetadata"
-      - "loadSpec with delayRender"
-
+    priority: A
   - id: T-28
     feature: engine-core
-    title: "Port Deco3D background from legacy"
-    priority: C
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Port Deco3D background from legacy\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "12 random shapes in 3 layers"
-      - "Float animation sin/cos"
-      - "Rotation + breathing scale"
-      - "Layer-specific blur"
-
-  # === IMPL: Scripts ===
+    priority: C
   - id: T-29
     feature: transcription-pipeline
-    title: "Create scripts/transcribe.ts"
-    priority: A
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create scripts/transcribe.ts\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Adapt from youtube_v4"
-      - "Medium model (Russian)"
-      - "Word-level timestamps"
-      - "Sub-word merging, punctuation removal"
-      - "Output → projects/<PROJECT>/transcription.json"
-
+    priority: A
   - id: T-30
     feature: scenario-workflow
-    title: "Create scripts/validate-spec.ts"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create scripts/validate-spec.ts\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Reads spec.json from project"
-      - "Zod validation of all schemas"
-      - "Pattern params validation"
-      - "Output valid or list of errors"
-
+    priority: B
   - id: T-31
     feature: customization
-    title: "Create scripts/init-project.ts"
-    priority: B
+    title: "\"\\"\\\"\\\\"\\\\\"\\\\\\"\\\\\\\"\\\\\\\\"\\\\\\\\\"\\\\\\\\\\"Create scripts/init-project.ts\\\\\\\\\\"\\\\\\\\\"\\\\\\\\"\\\\\\\"\\\\\\"\\\\\"\\\\"\\\"\\"\""
     status: TODO
-    checklist:
-      - "Scaffold: audio/, assets/, custom/{patterns/, components/, theme.json}, out/"
-      - "Name validation [a-z0-9-_]"
-      - "Error if project already exists"
+    priority: B
