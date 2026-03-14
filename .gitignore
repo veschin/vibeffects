@@ -1,0 +1,11 @@
+node_modules/
+out/
+.env
+*.wav
+legacy/
+projects/*/audio/
+projects/*/out/
+projects/*/transcription.json
+projects/*/whisper-output.json
+projects/*/full-text.txt
+public/web-captures/
