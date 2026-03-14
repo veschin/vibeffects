@@ -1,36 +1,36 @@
 features:
   ai-commentary:
-    stage: seed
+    stage: bdd
     tests: absent
     review: passed
     issues: 0
   customization:
-    stage: seed
+    stage: bdd
     tests: absent
     review: passed
     issues: 0
   engine-core:
-    stage: seed
+    stage: bdd
     tests: absent
     review: passed
     issues: 0
   pattern-library:
-    stage: seed
+    stage: bdd
     tests: absent
     review: passed
     issues: 0
   scenario-workflow:
-    stage: seed
+    stage: bdd
     tests: absent
     review: passed
     issues: 0
   subtitles:
-    stage: seed
+    stage: bdd
     tests: absent
     review: passed
     issues: 0
   transcription-pipeline:
-    stage: seed
+    stage: bdd
     tests: absent
     review: passed
     issues: 0

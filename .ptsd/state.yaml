@@ -1,10 +1,14 @@
 features:
   ai-commentary:
-    stage: seed
+    stage: bdd
     hashes:
+      bdd: 0995e511b73028631274cb23ff227d79f35f358fc5f2aacd47f972579cf18ff1
       prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
       seed: c02ed84fbc3749709c5cdec99accfbdd0d68ca93db9e76cb56809bfd3b7f3073
     scores:
+      bdd:
+        score: 8
+        at: "2026-03-14T15:20:50.330439771+03:00"
       prd:
         score: 8
         at: "2026-03-14T15:07:49.146901252+03:00"
@@ -12,11 +16,15 @@ features:
         score: 8
         at: "2026-03-14T15:10:13.313096141+03:00"
   customization:
-    stage: seed
+    stage: bdd
     hashes:
+      bdd: edd583395a2dddac2ab3bb692ded4f341e0578d442800d2bc5a4b939b94dd39c
       prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
       seed: eb32bc61282e3ab3a689675e404cd7dbcb1b914c3c2af8aeb57f5fe50469227d
     scores:
+      bdd:
+        score: 8
+        at: "2026-03-14T15:20:50.328982548+03:00"
       prd:
         score: 8
         at: "2026-03-14T15:07:49.145424583+03:00"
@@ -24,11 +32,15 @@ features:
         score: 8
         at: "2026-03-14T15:10:13.311515643+03:00"
   engine-core:
-    stage: seed
+    stage: bdd
     hashes:
+      bdd: 244ed8686f759623dbcd3829b793e905584553afb7c6d5aa7a70369aecb87235
       prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
       seed: 4fcfa559621fe2560a233dbef7ea1464a7e73c4a02b6ac2d969b97e4e0c21915
     scores:
+      bdd:
+        score: 8
+        at: "2026-03-14T15:20:50.325771253+03:00"
       prd:
         score: 8
         at: "2026-03-14T15:07:49.142333261+03:00"
@@ -36,11 +48,15 @@ features:
         score: 8
         at: "2026-03-14T15:10:13.308988662+03:00"
   pattern-library:
-    stage: seed
+    stage: bdd
     hashes:
+      bdd: 0fab1ecc9f9ee9d5d76fb25bd9a797bbd517869ab189379cf038144c8c13569e
       prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
       seed: edd7b281d3c5b0a536ff611bf75f799f9e51bf9dad549f19009b7df4a97289fe
     scores:
+      bdd:
+        score: 8
+        at: "2026-03-14T15:20:50.326657682+03:00"
       prd:
         score: 8
         at: "2026-03-14T15:07:49.143190503+03:00"
@@ -48,10 +64,15 @@ features:
         score: 8
         at: "2026-03-14T15:10:13.309847788+03:00"
   scenario-workflow:
-    stage: seed
+    stage: bdd
     hashes:
+      bdd: 86c7bdf1c2df794a85dcc6a8e8239f1cc3c1e28bc958bc24261dd2d6a4aa60e5
       prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+      seed: 8002d90ea2addd83009321913d8509c2e5366db7f3f1b22dbc0d86cb0fb8ecff
     scores:
+      bdd:
+        score: 8
+        at: "2026-03-14T15:20:50.328215829+03:00"
       prd:
         score: 8
         at: "2026-03-14T15:07:49.144663094+03:00"
@@ -59,11 +80,15 @@ features:
         score: 8
         at: "2026-03-14T15:10:16.816004054+03:00"
   subtitles:
-    stage: seed
+    stage: bdd
     hashes:
+      bdd: dca58d72790d2953235df0123b31c10f0b3e8baf1d34981b641c94bb61e36797
       prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
       seed: ad8247ec86901e98b12bac32c59124756d02d23d7c89ba565eaeafe726f0b8ae
     scores:
+      bdd:
+        score: 8
+        at: "2026-03-14T15:20:50.329633606+03:00"
       prd:
         score: 8
         at: "2026-03-14T15:07:49.146146345+03:00"
@@ -71,11 +96,15 @@ features:
         score: 8
         at: "2026-03-14T15:10:13.312316918+03:00"
   transcription-pipeline:
-    stage: seed
+    stage: bdd
     hashes:
+      bdd: 54cf26865c63167d0a3d5e1150a196a9dd8ea560d64fe4af7f10aed7cb3ee69b
       prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
       seed: 48215fcfeffc0444a523a9f64596d608a0c8648d98c9e287c424824a3156e5f7
     scores:
+      bdd:
+        score: 8
+        at: "2026-03-14T15:20:50.327425404+03:00"
       prd:
         score: 8
         at: "2026-03-14T15:07:49.143948415+03:00"
