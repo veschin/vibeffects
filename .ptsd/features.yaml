@@ -1,0 +1,22 @@
+features:
+  - id: engine-core
+    title: "Ядро движка рендеринга"
+    status: planned
+  - id: pattern-library
+    title: "Библиотека визуальных паттернов"
+    status: planned
+  - id: transcription-pipeline
+    title: "Транскрипция аудио"
+    status: planned
+  - id: scenario-workflow
+    title: "Интерактивный сценарий"
+    status: planned
+  - id: customization
+    title: "Система кастомизации"
+    status: planned
+  - id: subtitles
+    title: "Субтитры из транскрипции"
+    status: planned
+  - id: ai-commentary
+    title: AI-комментарии
+    status: planned

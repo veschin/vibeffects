@@ -1,0 +1,84 @@
+features:
+  ai-commentary:
+    stage: seed
+    hashes:
+      prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+      seed: c02ed84fbc3749709c5cdec99accfbdd0d68ca93db9e76cb56809bfd3b7f3073
+    scores:
+      prd:
+        score: 8
+        at: "2026-03-14T15:07:49.146901252+03:00"
+      seed:
+        score: 8
+        at: "2026-03-14T15:10:13.313096141+03:00"
+  customization:
+    stage: seed
+    hashes:
+      prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+      seed: eb32bc61282e3ab3a689675e404cd7dbcb1b914c3c2af8aeb57f5fe50469227d
+    scores:
+      prd:
+        score: 8
+        at: "2026-03-14T15:07:49.145424583+03:00"
+      seed:
+        score: 8
+        at: "2026-03-14T15:10:13.311515643+03:00"
+  engine-core:
+    stage: seed
+    hashes:
+      prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+      seed: 4fcfa559621fe2560a233dbef7ea1464a7e73c4a02b6ac2d969b97e4e0c21915
+    scores:
+      prd:
+        score: 8
+        at: "2026-03-14T15:07:49.142333261+03:00"
+      seed:
+        score: 8
+        at: "2026-03-14T15:10:13.308988662+03:00"
+  pattern-library:
+    stage: seed
+    hashes:
+      prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+      seed: edd7b281d3c5b0a536ff611bf75f799f9e51bf9dad549f19009b7df4a97289fe
+    scores:
+      prd:
+        score: 8
+        at: "2026-03-14T15:07:49.143190503+03:00"
+      seed:
+        score: 8
+        at: "2026-03-14T15:10:13.309847788+03:00"
+  scenario-workflow:
+    stage: seed
+    hashes:
+      prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+    scores:
+      prd:
+        score: 8
+        at: "2026-03-14T15:07:49.144663094+03:00"
+      seed:
+        score: 8
+        at: "2026-03-14T15:10:16.816004054+03:00"
+  subtitles:
+    stage: seed
+    hashes:
+      prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+      seed: ad8247ec86901e98b12bac32c59124756d02d23d7c89ba565eaeafe726f0b8ae
+    scores:
+      prd:
+        score: 8
+        at: "2026-03-14T15:07:49.146146345+03:00"
+      seed:
+        score: 8
+        at: "2026-03-14T15:10:13.312316918+03:00"
+  transcription-pipeline:
+    stage: seed
+    hashes:
+      prd: ef8506142b5ffc5ab86d1f814622cd561b30eb204f45888fa807b896f955c0dd
+      seed: 48215fcfeffc0444a523a9f64596d608a0c8648d98c9e287c424824a3156e5f7
+    scores:
+      prd:
+        score: 8
+        at: "2026-03-14T15:07:49.143948415+03:00"
+      seed:
+        score: 8
+        at: "2026-03-14T15:10:13.310673129+03:00"
