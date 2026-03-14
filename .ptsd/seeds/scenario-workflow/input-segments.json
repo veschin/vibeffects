@@ -1,0 +1,16 @@
+{
+  "segments": [
+    {
+      "startSec": 0.0,
+      "endSec": 12.5,
+      "topic": "Вступление: формат подкаста",
+      "keyPhrases": ["формат подкаста", "ClojureScript", "визуализации"]
+    },
+    {
+      "startSec": 12.5,
+      "endSec": 30.0,
+      "topic": "Что такое ClojureScript",
+      "keyPhrases": ["диалект Clojure", "функциональный лисп", "фронтенд", "хост-платформа"]
+    }
+  ]
+}

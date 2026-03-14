@@ -1,0 +1,6 @@
+feature: scenario-workflow
+files:
+  - input-transcription.json
+  - input-segments.json
+  - expected-spec.json
+  - input-empty.json
