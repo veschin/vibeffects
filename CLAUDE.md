@@ -1,3 +1,86 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Build & Development Commands
+
+```bash
+npm run build              # TypeScript check (tsc --noEmit)
+npm run studio             # Remotion Studio preview (localhost:3000)
+npm run render             # Render video to MP4
+
+make studio PROJECT=name   # Studio with project context
+make render PROJECT=name   # Software render → projects/name/out/name.mp4
+make render-hw PROJECT=name # GPU render (NVIDIA h264_nvenc)
+make init PROJECT=name     # Scaffold new project directory
+make transcribe PROJECT=name # Whisper audio → transcription.json
+make validate PROJECT=name # Zod validation of spec.json
+make pipeline PROJECT=name # Full pipeline status display
+```
+
+### Testing
+
+```bash
+npx vitest                 # Run all tests
+npx vitest run             # Single run (no watch)
+npx vitest run src/engine  # Run tests in specific directory
+```
+
+Vitest config: jsdom environment, `@/*` → `src/*` path alias, globals enabled.
+
+## Architecture
+
+**Vibeffects v2** — a Remotion-based video generation engine that renders educational/explainer videos from declarative JSON specs.
+
+### Data Flow
+
+```
+audio.wav → Whisper → transcription.json
+                              ↓
+                    spec.json (VideoSpec)
+                              ↓
+              Remotion (React components) → MP4
+```
+
+### Three-Layer Content System
+
+1. **Elements** (14 types) — atomic visual components: text, heading, code, image, bulletList, table, graph, chart, icon, divider, badge, progress, counter, callout. All share `id`, `enterSec`, `exitSec?`, `position?`, `animation?`.
+
+2. **Patterns** (26 recipes) — expand to multiple elements with layout/timing via `PATTERN_REGISTRY`. Each pattern has a Zod schema and `resolve(params, ctx) → Element[]`.
+
+3. **Scenes** — timed containers mixing patterns + raw elements, with accent color and background config.
+
+### Key Modules
+
+- `src/engine/types.ts` — All TypeScript types (VideoSpec, Element unions, Palette, Transcription)
+- `src/engine/schema.ts` — Zod validation schemas mirroring types.ts
+- `src/Root.tsx` / `src/Composition.tsx` — Remotion entry points
+- `scripts/pipeline.ts` — CLI pipeline status tracker
+- `scripts/convert-whisper.mjs` — Whisper output conversion
+
+### Theme System (4-level cascade)
+
+Engine defaults → `~/.vibeffects/theme.json` → `projects/<P>/custom/theme.json` → inline `spec.json.theme`
+
+6 palette presets: dark-cosmos, warm-ember, deep-ocean, nibelung, rose-quartz, acid-neon.
+
+### Stage Layout Engine
+
+`calculateElementStates(frame, fps, elements)` manages element lifecycle phases: hidden → focus (78%×72% center) → refocus → grid. Spring interpolation (0.85s) for transitions.
+
+### Key Dependencies
+
+- Remotion 4.0 (video framework), React 18, TypeScript 5.7
+- Zod 3.23 (schema validation), ELK.js 0.9 (graph layout), Prism.js 1.29 (syntax highlighting)
+
+## Project Structure
+
+Each video project lives in `projects/<name>/` with: `audio/`, `assets/`, `custom/`, `out/`, `spec.json`, `transcription.json`.
+
+BDD features, seed data, and pipeline state live in `.ptsd/`.
+
+---
+
 <!-- ---ptsd--- -->
 # Claude Agent Instructions
 
