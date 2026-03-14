@@ -1,0 +1,6 @@
+feature: customization
+files:
+  - theme-happy.json
+  - theme-invalid.json
+  - theme-palette-object.json
+  - project-structure.txt

@@ -1,0 +1,25 @@
+{
+  "words": [
+    { "text": "Так", "startMs": 20, "endMs": 260, "confidence": 0.638 },
+    { "text": "попробуем", "startMs": 550, "endMs": 750, "confidence": 0.987 },
+    { "text": "в", "startMs": 870, "endMs": 910, "confidence": 0.96 },
+    { "text": "формате", "startMs": 950, "endMs": 1370, "confidence": 0.996 },
+    { "text": "подкаста", "startMs": 1550, "endMs": 1970, "confidence": 0.973 },
+    { "text": "поговорить", "startMs": 2030, "endMs": 2960, "confidence": 0.973 },
+    { "text": "о", "startMs": 3040, "endMs": 3100, "confidence": 0.984 },
+    { "text": "том", "startMs": 3170, "endMs": 3530, "confidence": 0.992 },
+    { "text": "что", "startMs": 3530, "endMs": 3690, "confidence": 0.888 },
+    { "text": "такое", "startMs": 3730, "endMs": 3970, "confidence": 0.984 },
+    { "text": "кожа", "startMs": 4040, "endMs": 4200, "confidence": 0.63 },
+    { "text": "скрипт", "startMs": 4200, "endMs": 4600, "confidence": 0.791 },
+    { "text": "потому", "startMs": 4640, "endMs": 4900, "confidence": 0.493 },
+    { "text": "что", "startMs": 4900, "endMs": 5000, "confidence": 0.967 },
+    { "text": "я", "startMs": 5000, "endMs": 5400, "confidence": 0.861 },
+    { "text": "не", "startMs": 5400, "endMs": 5520, "confidence": 0.943 },
+    { "text": "могу", "startMs": 5520, "endMs": 5660, "confidence": 0.889 },
+    { "text": "написать", "startMs": 5660, "endMs": 6080, "confidence": 0.967 },
+    { "text": "нормальный", "startMs": 6080, "endMs": 6580, "confidence": 0.955 },
+    { "text": "сценарий", "startMs": 6580, "endMs": 6940, "confidence": 0.989 }
+  ],
+  "durationMs": 15000
+}

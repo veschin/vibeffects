@@ -1,0 +1,10 @@
+{
+  "segments": [
+    {
+      "startSec": 0.0,
+      "endSec": 30.0,
+      "topic": "Весь контент",
+      "keyPhrases": ["ClojureScript"]
+    }
+  ]
+}

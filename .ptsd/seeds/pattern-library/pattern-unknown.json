@@ -1,0 +1,4 @@
+{
+  "pattern": "nonexistent-pattern",
+  "params": { "foo": "bar" }
+}

@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "meta": { "title": "ClojureScript Подкаст" },
+  "audio": "audio/narration.mp3",
+  "transcription": "transcription.json",
+  "theme": { "palette": "dark-cosmos" },
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "Вступление: формат подкаста",
+      "startSec": 0.0,
+      "endSec": 12.5,
+      "accent": "#6366f1",
+      "content": [
+        {
+          "pattern": "title-card",
+          "params": { "text": "ClojureScript", "subtitle": "Подкаст о функциональном фронтенде" },
+          "enterSec": 0,
+          "durationSec": 5
+        }
+      ]
+    },
+    {
+      "id": "what-is-cljs",
+      "title": "Что такое ClojureScript",
+      "startSec": 12.5,
+      "endSec": 30.0,
+      "accent": "#10b981",
+      "content": [
+        {
+          "pattern": "key-point",
+          "params": { "statement": "Диалект Clojure для фронтенда, компилируется в JavaScript" },
+          "enterSec": 0,
+          "durationSec": 8
+        },
+        {
+          "pattern": "comparison",
+          "params": {
+            "left": { "label": "Clojure (backend)", "items": ["JVM", "Java interop"] },
+            "right": { "label": "ClojureScript (frontend)", "items": ["JavaScript", "Browser interop"] }
+          },
+          "enterSec": 8
+        }
+      ]
+    }
+  ]
+}

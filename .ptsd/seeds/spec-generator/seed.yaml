@@ -1,0 +1,6 @@
+feature: spec-generator
+files:
+  - input-transcription.json
+  - input-segments.json
+  - expected-spec.json
+  - input-empty.json

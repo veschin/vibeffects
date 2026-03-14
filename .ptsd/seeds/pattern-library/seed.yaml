@@ -1,0 +1,5 @@
+feature: pattern-library
+files:
+  - patterns-happy.json
+  - pattern-empty-items.json
+  - pattern-unknown.json

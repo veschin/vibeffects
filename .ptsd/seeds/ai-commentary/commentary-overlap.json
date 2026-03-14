@@ -1,0 +1,6 @@
+{
+  "commentary": [
+    { "startSec": 10.0, "durationSec": 5, "text": "Первый комментарий", "type": "note" },
+    { "startSec": 12.0, "durationSec": 5, "text": "Перекрывающийся", "type": "correction" }
+  ]
+}

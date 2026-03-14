@@ -1,0 +1,8 @@
+{
+  "subtitles": {
+    "enabled": true,
+    "fontSize": 28,
+    "position": "bottom",
+    "style": "pill"
+  }
+}

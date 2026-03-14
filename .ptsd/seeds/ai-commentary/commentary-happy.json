@@ -1,0 +1,22 @@
+{
+  "commentary": [
+    {
+      "startSec": 15.5,
+      "durationSec": 4,
+      "text": "На самом деле ClojureScript появился в 2011, а не в 2010",
+      "type": "correction"
+    },
+    {
+      "startSec": 45.0,
+      "durationSec": 3.5,
+      "text": "Atom — это не просто переменная, а полноценный concurrency-примитив",
+      "type": "note"
+    },
+    {
+      "startSec": 120.0,
+      "durationSec": 4,
+      "text": "Скобки — это не баг, это фича. Спросите любого лиспера.",
+      "type": "joke"
+    }
+  ]
+}

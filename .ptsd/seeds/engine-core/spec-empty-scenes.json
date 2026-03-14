@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "meta": { "title": "Empty Test" },
+  "audio": "audio/test.mp3",
+  "transcription": "transcription.json",
+  "theme": { "palette": "dark-cosmos" },
+  "scenes": []
+}

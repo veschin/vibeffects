@@ -1,0 +1,5 @@
+feature: subtitles
+files:
+  - subtitles-config-happy.json
+  - subtitles-config-disabled.json
+  - transcription-excerpt.json

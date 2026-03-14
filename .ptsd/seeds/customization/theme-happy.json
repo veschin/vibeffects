@@ -1,0 +1,11 @@
+{
+  "palette": "nibelung",
+  "fonts": {
+    "display": "Comfortaa",
+    "code": "Fira Code"
+  },
+  "overrides": {
+    "bg": "#0a0a12",
+    "radiusBlock": 16
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "meta": { "title": "ClojureScript: Почему это круто" },
+  "audio": "audio/narration.mp3",
+  "transcription": "transcription.json",
+  "theme": {
+    "palette": "dark-cosmos",
+    "fonts": { "display": "Raleway", "body": "Manrope", "code": "JetBrains Mono" }
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "Что такое ClojureScript",
+      "startSec": 0,
+      "endSec": 45.2,
+      "accent": "#6366f1",
+      "content": [
+        {
+          "pattern": "title-card",
+          "params": { "text": "ClojureScript", "subtitle": "Функциональный Lisp для фронтенда" },
+          "enterSec": 0,
+          "durationSec": 5
+        },
+        {
+          "pattern": "key-point",
+          "params": { "statement": "Диалект Clojure, который компилируется в JavaScript" },
+          "enterSec": 6,
+          "durationSec": 8
+        }
+      ]
+    },
+    {
+      "id": "immutability",
+      "title": "Иммутабельность",
+      "startSec": 45.2,
+      "endSec": 120.5,
+      "accent": "#10b981",
+      "content": [
+        {
+          "pattern": "bullet-reveal",
+          "params": {
+            "title": "Иммутабельный по умолчанию",
+            "items": [
+              "Переменные нельзя мутировать",
+              "Atom — единственный мутабельный тип",
+              "Транзакционная память под капотом",
+              "8 из 10 ошибок — из-за мутаций"
+            ]
+          },
+          "enterSec": 0,
+          "durationSec": 20
+        }
+      ]
+    },
+    {
+      "id": "repl",
+      "title": "REPL-Driven Development",
+      "startSec": 120.5,
+      "endSec": 210.0,
+      "accent": "#f59e0b",
+      "content": [
+        {
+          "pattern": "architecture-diagram",
+          "params": {
+            "nodes": [
+              { "id": "editor", "label": "VS Code / Emacs", "group": "client" },
+              { "id": "nrepl", "label": "nREPL Server", "group": "server" },
+              { "id": "browser", "label": "Browser Runtime", "group": "server" }
+            ],
+            "edges": [
+              { "from": "editor", "to": "nrepl", "label": "JSON (bencode)" },
+              { "from": "nrepl", "to": "browser", "label": "eval" }
+            ]
+          },
+          "enterSec": 2,
+          "durationSec": 25
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "pattern": "title-card",
+    "params": { "text": "ClojureScript", "subtitle": "Функциональный фронтенд" }
+  },
+  {
+    "pattern": "code-walkthrough",
+    "params": {
+      "code": "(defn greet [name]\n  (str \"Hello, \" name \"!\"))\n\n(greet \"world\")",
+      "language": "clojure",
+      "highlights": [[1, 2], [4]]
+    }
+  },
+  {
+    "pattern": "comparison",
+    "params": {
+      "left": { "label": "JavaScript", "items": ["Мутабельные объекты", "npm + webpack/vite", "TypeScript для типов"] },
+      "right": { "label": "ClojureScript", "items": ["Иммутабельные данные", "shadow-cljs", "Динамическая типизация"] }
+    }
+  },
+  {
+    "pattern": "process-flow",
+    "params": {
+      "steps": [
+        { "label": "Код", "description": "Пишете функцию в файле" },
+        { "label": "Eval", "description": "Отправляете в REPL" },
+        { "label": "Результат", "description": "Видите ответ в редакторе" },
+        { "label": "Итерация", "description": "Меняете и повторяете" }
+      ]
+    }
+  },
+  {
+    "pattern": "metric-dashboard",
+    "params": {
+      "metrics": [
+        { "label": "Типов данных", "value": 4, "unit": "шт" },
+        { "label": "Сборщиков", "value": 3, "unit": "шт" },
+        { "label": "Скобок", "value": 9001, "unit": "", "prefix": ">" }
+      ]
+    }
+  }
+]

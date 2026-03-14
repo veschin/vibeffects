@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "meta": { "title": "Invalid Timing" },
+  "audio": "audio/test.mp3",
+  "transcription": "transcription.json",
+  "theme": { "palette": "dark-cosmos" },
+  "scenes": [
+    {
+      "id": "bad-scene",
+      "title": "Bad Timing",
+      "startSec": 50,
+      "endSec": 30,
+      "accent": "#ff0000",
+      "content": []
+    }
+  ]
+}
